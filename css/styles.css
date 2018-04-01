@@ -1,0 +1,603 @@
+/* Корневые элементы */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Hind', tahoma;
+	min-height: 100%;
+	position: relative;
+	margin: 0 auto;
+	background: linear-gradient(to bottom, #212429 0%, #212429 345px, #f9f9fb 345px, #f9f9fb 100%);
+	background-repeat: repeat-x;
+	background-color: #f9f9fb;
+}
+
+/* Разметка страницы */	
+.page {
+	position: relative;
+	width: 1638px;
+	left: 50%;
+	margin-left: -819px;
+}
+
+/* Если ширина экрана меньше ширины оригинального макета, то убираем центрирование */	
+@media all and (max-width: 1638px) {
+    .page {
+		position: relative;
+		width: 1638px;
+		left: 0;
+		margin-left: 0;
+	}
+}
+
+header {
+	box-sizing: border-box;
+	padding: 0 54px;
+}
+
+footer {
+	color: #f9f9fb;
+	padding: 0;
+	background-color: #212429;
+	position: absolute;
+	height: 410px;
+	width: 1638px;
+	left: 0;
+	bottom: 0;
+}
+
+footer .column {
+	padding: 0;
+}
+
+main {
+	box-sizing: border-box;
+	padding: 0 54px 410px 54px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #f9f9fb;
+}
+
+.column {
+	padding: 80px 0 60px 0;
+	box-sizing: content-box;
+	width: 360px;
+}
+
+.top {
+	color: #ffffff;
+	height: 60px;
+}
+
+.socialpanel {
+	float: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.lalala {
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 4px;
+	position: absolute;
+	top: 226px;
+	left: 100px;
+}
+
+.lalalalala {
+	line-height: 34px;
+	letter-spacing: 4px;
+	font-size: 14px;
+	font-weight: 600;
+	color: white;
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 248px;
+	right: -76px;
+}
+
+.background-photo {
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+/* Логотип */
+.logo {
+	height: 60px;
+	font-weight: 600;
+	font-size: 21px;
+	letter-spacing: 6px;
+	text-align: center;
+	display: flex;
+}
+
+.logo .wrap {
+	margin: auto;
+}
+
+.logo img {
+	margin-top: 1px;
+	margin-right: 8px;
+}
+
+.logo p {
+	display: inline-block;
+}	
+
+/* Форма подписки (Subscribe) */	
+.subscribe {
+	height: 100px;
+	background-color: #f4f4f4;
+	border: 1px #f8f8fa;
+}
+
+.signup,
+.footer-title,
+.block-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.signup {
+	box-sizing: border-box;
+	padding-left: 30px;
+	vertical-align: middle;
+	font-size: 20px;
+	letter-spacing: 6px;
+	width: 260px;
+	display: inline-block;
+}
+
+input {
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 3px;
+	height: 50px;
+	box-sizing: border-box;
+	margin-top: 28px;
+	margin-right: 30px;
+	padding-left: 28px;
+	width: 448px;
+}
+
+input:last-child {
+	margin-right: 0;
+	padding-left: 0;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: 4px;
+	width: 280px;
+	height: 49px;
+	background-color: #212121;
+	border: 1px #212121 solid;
+	color: white;
+}
+
+input:last-child:hover {
+	cursor: pointer;
+}
+
+form {
+	display: inline-block;
+}
+
+/* Стрелочки FEATURED ARTICLE справа на картинке */
+.arrows {
+	padding: 0 10px;
+}
+
+
+/* Переключатели FEATURED ARTICLE справа на картинке  */	
+.switch-off {
+  height: 8px;
+  width: 8px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+}
+
+.switch-on {
+  height: 8px;
+  width: 8px;
+  background-color: #999999;
+  border: 1px solid #ffffff;
+  display: inline-block;
+}
+
+/* Заголовки, разделители, ссылки итд */	
+h1 {
+	font-weight: 700;
+	font-size: 40px;
+	letter-spacing: 6px;
+	text-align: left;
+	position: absolute;
+	top: 266px;
+	left: 100px;
+}
+
+hr {
+	border: none;
+	background-color: #65676a;
+	height: 2px;
+	margin: 30px 0;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	cursor: auto;
+}
+
+/* Контентные блоки */	
+.block {
+	background: #ffffff;
+	padding: 0 32px;
+	text-align: center;
+	position: relative;
+}
+
+.block-wrap:hover {
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.block-wrap + .block-wrap {
+	margin-top: 48px;
+}
+
+.block-stacked {
+	margin-top: 0px !important;
+}
+
+.block-img {
+	width: 40px;
+	height: 35px;
+	background-color: #212121;
+	position: absolute;
+	left: calc((100% - 40px)/2);
+	top: calc(-35px/2);
+	display: flex;
+}
+
+.block-img i {
+	color: #ffffff;
+	margin: auto;
+}
+
+.block-little {
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #a7a7a7;
+}
+
+.block-little-first {
+	padding-top: 58px;
+}
+
+.block-title {
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.block-text {
+	padding: 30px 0 0 0;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+.block-footer {
+	background-color: #ffffff;
+	border: 1px solid #f7f7f7;
+	height: 60px;
+	letter-spacing: 2px;
+	font-size: 13px;
+	color: #464646;
+	display: flex;
+}
+
+.block-footer-comment {
+	margin: auto;
+	margin-left: 18px;
+	margin-top: 22px;
+}
+
+.block-footer-comment p {
+	color: #999999;
+	display: inline;
+	margin-top: -2px;
+	vertical-align: middle;
+}
+
+.block-footer-icons {
+	margin: auto;
+	margin-right: 12px;
+	margin-top: 22px;
+}
+
+.block-footer-icons i {
+	padding: 0 6px;
+}
+
+.block-footer-icons i:hover {
+	color: #000000;
+	cursor: pointer;
+}
+
+.block-0 {
+	height: 510px;
+}
+
+.block-2 {
+	background-image: url(../img/imgblock.png);
+	background-position: -5px -5px;
+	height: 546px;
+}
+
+.block-3 {
+	margin-top: -48px;
+}
+
+.block-3-img {
+	height: 256px;
+	background-color: #f4f4f4;
+}
+
+
+.block-4,
+.block-9,
+.block-10 {
+	background-color: #212429;
+	color: #f0f0f1;
+}
+
+.block-4 .block-img,
+.block-9 .block-img,
+.block-10 .block-img {
+	background-color: #ffffff;
+}
+
+.block-4 .block-img i,
+.block-9 .block-img i,
+.block-10 .block-img i {
+	color: #212429;
+}
+
+.block-4 .block-signature {
+	color: #999999;
+	padding: 40px 0;
+}
+
+.block-6 {
+	height: 378px;
+}
+
+.block-5 {
+	height: 256px;
+	padding: 0;
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.block-5 img {
+	align-items: center;
+}
+
+.block-8 {
+	padding-top: 200px;
+}
+
+.block-9 {
+	height: 176px;
+	display: flex;
+}
+
+.block-9 a {
+	color: #ffffff;
+	margin: auto;
+}
+
+.block-9 a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.block-10 {
+	height: 364px;
+}
+
+.block-12 {
+	height: 571px;
+}
+
+/* Всякое для блоков */
+.circle {
+	display: inline-block;
+	padding: 0;
+	margin: 30px 0;
+	width: 128px;
+	height: 128px;
+	border-radius: 50% 50%;
+	background-color: #999999;
+}
+
+.block-link {
+	border-left: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	margin: 40px 0 40px 0;
+	width: 128px;
+	line-height: 30px;
+	font-size: 10px;
+	font-weight: 500;
+	letter-spacing: 4px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+
+/* Менюшка */	
+.menu {
+	float: left;
+	width: 62px;
+	height: 60px;
+	margin-right: 225px;
+	border-left: 1px solid #3c3c3c;
+	border-right: 1px solid #3c3c3c;
+	display: flex;
+}
+
+.menu i {
+	font-size: 20px;
+	margin: auto;
+}
+
+.menu:hover {
+	color: #999999;
+	cursor: pointer;
+}
+
+/*Значки*/	
+.icon-menu:before {
+	font-size: 32px;
+}
+
+.icon-tumblr:before {
+	font-size: 14px;
+}
+
+.icon-facebook:before {
+	font-size: 13px;
+}
+
+.icon-rss:before {
+	font-size: 12px;
+}
+
+.icon-grid:before {
+  font-size: 32px;
+}
+
+.icon-image:before {
+  font-size: 24px;
+}
+
+.icon-comments{
+	padding-right: 5px
+}
+
+.icon-comments:before {
+  font-size: 16px;
+}
+
+
+.icon-centered {
+	display: flex;
+	height: 60px;
+	width: 55px;
+	border-right: 1px solid #3c3c3c;
+}
+
+.icon-centered i {
+	margin: auto;
+}
+
+.icon-centered:first-child {
+	border-left: 1px solid #3c3c3c;
+}
+
+.icon-centered:hover {
+	color: #999999;
+	cursor: pointer;
+}
+
+/* Подвал */
+.footer-columns {
+	padding: 0 54px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-title {
+	margin: 60px 0 40px 0;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.footer-text {
+	font-size: 15px;
+}
+
+.footer-text, .tweeter-message-header, .tweeter-message {
+	font-weight: 300;
+	letter-spacing: 2px;
+	font-size: 14px;
+}
+
+/* Подпись Nathaliya Jhone */
+.signature {
+	height: 148px;
+	background: #3a3c49;
+	font-family: 'Mrs Saint Delafield', cursive;
+	font-size: 36px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.signature p {
+	transform: rotate(-12deg);
+	padding: 10px 10px;
+}
+
+/* Фоточки из инстаграма */
+.instagram-img img {
+	height: 100px;
+	width: 114px;
+	padding: 0 0px;
+	margin-top: -5px
+}
+
+.copyright {
+	padding: 0 54px;
+	line-height: 40px;
+	font-size: 15px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #17191c;
+}
+
+.copyright p {
+	color: #747577;
+	vertical-align: middle;
+}
+
+/* Посты из Твиттера */
+.tweeter-message-header {
+		font-size: 14px;
+	}
+
+.tweeter-message {
+	padding-left: 20px;
+	margin: 10px 0 40px 0;
+}	
+
+
+/* Последние комментарии */
+.latest-comments {
+	padding-bottom: 5px;
+}
