@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'DECOICONS';
   src:
-    url('../FONTS/fonts/DECOICONS.ttf?8qw7a8') format('truetype'),
-    url('../FONTS/DECOICONS.woff?8qw7a8') format('woff'),
-    url('../FONTS/DECOICONS.svg?8qw7a8#DECOICONS') format('svg');
+    url('../fonts/DECOICONS.ttf') format('truetype'),
+    url('../fonts/DECOICONS.woff') format('woff'),
+    url('../fonts/DECOICONS.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
